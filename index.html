@@ -1,4 +1,71 @@
 <!DOCTYPE html>
 <html>
-<h1>hello!</h1>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BOOTSTRAP STUFF -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- EXTERNAL CSS/JS -->
+	<script src="functions.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css">
+
+</head>
+
+<body>
+<div class="container-fluid" align="center">
+
+	<br><h1 id="title" class="text-center">Math.random()</h1>
+	<button type="button" class="btn btn-default btn-sm" onclick="copy();">
+        <span class="glyphicon glyphicon-copy"></span> Copy 
+    </button>	
+	<br><br><br>
+
+	<form onreset="formReset();" action="#" method="post" onsubmit="getOutput();return false;">
+		<div class="table-responsive">
+		<table class="table text-center" align="center" style="width: 1px;">
+			<thead style="font-size:30px">
+				<tr>
+					<th class="text-center" style="border-bottom: none;">Give me a(n)</th>
+					<th class="text-center" style="border-bottom: none;">from</th>
+					<th class="text-center" style="border-bottom: none;">to</th>
+					<th class="text-center" style="border-bottom: none;"><input class="btn btn-danger" style="font-size:20px;" name="reset" type="reset" value="Reset"/></th>
+				</tr>
+			</thead>
+			<tbody style="font-size:20px">
+				<tr>
+
+					<td style="text-align: center; font-size:25px; border-top: none;">
+
+    					<div style="display: inline-block; text-align: left;">
+
+						<input type="radio" name="typecast" id="int" value="int" checked="checked" onclick="validateRadio()"><label for="int">int</label><br>
+						<input type="radio" name="typecast" id="double" value="double" onclick="validateRadio()"><label for="double">double</label><br>
+
+						</div>
+
+					</td>
+
+					<td style="border-top: none"><input type="text" id="min" name="min" size="7" maxlength="15"><br>
+					<input type="checkbox" name="incmin" id="includemin" value="incmin" checked="checked">Inclusive</td>
+					<td style="border-top: none"><input type="text" id="max" name="min" size="7" maxlength="15"><br><input type="checkbox" name="incmax" id="includemax" value="incmax">Inclusive</td>
+					
+					<td style="border-top: none">
+						<input class="btn btn-info" style="font-size:20px" name="submit" type="submit" value="Generate!"/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</form>
+
+</div>
+</body>
+
 </html>

@@ -1,0 +1,61 @@
+body { 
+	font: "Fira Code"; 
+	background-image: url("https://subtlepatterns.toptal.io/designers/subtlepatterns/wp-content/themes/tweaker7/images/transp_bg.png");
+}
+
+.code {
+  	font-feature-settings: "calt" 1;
+  	text-rendering: optimizeLegibility;
+  	width: 30em;
+  	margin: 5em auto;
+  	white-space: pre-wrap;
+  	word-break: break-all;
+}
+
+.light { 
+	font-weight: 300; 
+}
+
+.regular { 
+	font-weight: 400; 
+}
+
+.medium { 
+	font-weight: 500; 
+}
+
+.bold { 
+	font-weight: 700; 
+}
+
+i { 
+	font-style: normal; 
+	color: #c33; 
+}
+
+b { 
+	font-weight: inherit; 
+	color: #c33; 
+}
+
+td {
+	padding:20px !important;
+	white-space: nowrap;
+}
+
+th {
+	white-space: nowrap;
+}
+
+input[type="radio"]{
+	margin-right: 10px;
+}
+
+input[type="checkbox"]{
+	margin-right: 10px;
+}
+
+label {
+	font-weight: normal !important;
+}
+
