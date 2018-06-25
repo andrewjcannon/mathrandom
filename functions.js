@@ -1,6 +1,7 @@
 function getOutput(){
 	var min = document.getElementById('min').value;
 	var max = document.getElementById('max').value;
+	console.log("min: " + min + " , max: " + max);
 	var type = document.querySelector('input[name="typecast"]:checked').value;
 
 	var incmin = document.getElementById('includemin').checked;
@@ -10,7 +11,7 @@ function getOutput(){
 		alert("Please enter valid numbers");
 		return;
 	}
-	if(min>max){
+	if(parseInt(min)>parseInt(max)){
 		alert("min cannot be greater than max");
 		return;
 	}
